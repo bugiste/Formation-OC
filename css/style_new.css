@@ -709,6 +709,14 @@ footer {
         padding-bottom: 0.5em;        
     }
 
+    .titre{
+        /* width: 0; */
+        width : 100%;
+        word-break: break-word; /* force le texte à revenir à la ligne */
+        overflow: hidden;
+
+    }
+    
     h1 {        
         font-size: 22px;
         margin: 0;
@@ -723,7 +731,8 @@ footer {
         /* margin: 0; */
         margin-left: 5em;
     }
-
+     
+    
     .paverecherche {
         display: flex;
         flex-direction: row;        
