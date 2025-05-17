@@ -794,7 +794,7 @@ footer {
 
     .boutonIcone{
         min-width: 40px; /* Réduit pour mobile */
-        padding: 0 10px; /* Réduit pour mobile */
+        /* padding: 0 10px; Réduit pour mobile */
         margin-left: 5px; /* Réduit pour mobile */
 
     }
@@ -845,7 +845,7 @@ footer {
 
     .FormatBoutonFiltre {
         height: 3.3em;
-        min-width: 120px; /* Largeur minimale pour éviter que les boutons ne deviennent trop petits */
+        min-width: 136px; /* Largeur minimale pour éviter que les boutons ne deviennent trop petits */
         display: flex;
         align-items: center;
         justify-content: center;          
@@ -883,7 +883,8 @@ footer {
     }
 
     .IconeFiltre {
-        margin-right: 5px;
+        /* margin-right: 5px; */
+        padding-left: 1.5em;
     }
 
     .logeDispo {
