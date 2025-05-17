@@ -608,9 +608,7 @@ footer {
         margin: 0;
         padding: 0;        
         width: 100%;        
-        height: 100%;
-        
-        /* align-items: center; */
+        height: 100%;       
     }
 
     .contenu {
@@ -709,27 +707,26 @@ footer {
         padding-bottom: 0.5em;        
     }
 
-    .titre{
-        width: 0;
+    .titre{        
         width : 100%;
         word-break: break-word; /* force le texte à revenir à la ligne */
         overflow: hidden;
+        padding: 0 1em; /* Ajout de padding pour mobile */
+        box-sizing: border-box; /* Important */
 
     }
     
-    h1 {        
-        font-size: 22px;
-        margin: 0;
-        margin-right: 2px;
-        margin-bottom: 0.5em;
-        margin-left: var(--bordureDroiteMobile);
-        padding-right: 2.3em;
+    h1 {  
+        font-size: clamp(18px, 5vw, 22px); /* Taille responsive */
+        margin: 0 0 0.5em 0;
+        padding-right: 1em; /* Réduit pour mobile */
+        padding-left: 1em; /* Ajouté pour mobile */
     }
 
     p {
-        font-size: 16px;
-        /* margin: 0; */
-        margin-left: 5em;
+        font-size: 16px;        
+        margin-left: 5em;        
+         padding-right: 1em; /* Ajouté pour mobile */
     }     
     
     .paverecherche {
@@ -737,41 +734,24 @@ footer {
         flex-direction: row;         
         padding-right: 3em;          
         width: 90%;        
-        margin-left: 22%; 
-        margin-right: 1.5em;
-        margin-bottom: 1em;
-        box-sizing: border-box;
+        box-sizing: border-box;        
+        margin: 0 auto 1em auto; /* Centré avec marge auto */
+        padding: 0 0.5em; /* Padding réduit */ 
     }
     
     .recherche {
         display: flex;
-        align-items: center;
-        
+        align-items: center;        
         background-color: var(--main-bg-color);
-        border-top-left-radius: 13px;
-        border-bottom-left-radius: 13px;        
-        flex-shrink: 1; /* Permet un léger rétrécissement si nécessaire */
-        margin-right: 4px;
-
-        height: 100%; /* Prend toute la hauteur du parent */        
-        padding: 0 15px; /* Espace interne horizontal */
-        box-sizing: content-box;
-        min-height: 48px; /* Hauteur minimale garantie */
-        align-self: stretch; /* Force l'étirement vertical */
-        position: relative; /* Nouveau */
+        border-radius: 13px 0 0 13px;
+        flex-shrink: 1;
+        height: 100%;
+        padding: 0 10px; /* Réduit pour mobile */
+        min-height: 48px;
+        position: relative;
+        
     }
-
-    .recherche::after {
-        content: "";
-        position: absolute;
-        top: 0;
-        right: -4px; /* Compense la marge */
-        bottom: 0;
-        width: 4px; /* Largeur de la marge */
-        background-color: inherit; /* Reprend la couleur de fond */
-        z-index: -1;
-    }
-
+   
     .boutonRechercher, 
     .boutonIcone {    
     min-width: 0; /* Permet aux éléments de rétrécir */
@@ -788,7 +768,10 @@ footer {
 
     .etiquetteRecherche {
         flex-grow: 1; /* Prend tout l'espace disponible */        
-        min-width: 0;        
+        min-width: 0;   /* Permet aux éléments de rétrécir */        
+        width: 100%; /* Assure la prise de toute la largeur disponible */
+        padding: 0.5em; /* Ajout de padding */
+        font-size: clamp(14px, 4vw, 16px); /* Taille responsive */
     }
 
     .boutonRechercher {
@@ -807,10 +790,10 @@ footer {
     }   
 
     .boutonIcone{
-        width: auto; /* Permet une largeur flexible */
-        min-width: 50px; /* Largeur minimale */
-        padding: 0 15px; /* Ajoute un peu d'espace à l'intérieur */
-        margin-left: 10px;/*  Espace supplémentaire à droite */
+        min-width: 40px; /* Réduit pour mobile */
+        padding: 0 10px; /* Réduit pour mobile */
+        margin-left: 5px; /* Réduit pour mobile */
+
     }
 
     .fa-magnifying-glass {
