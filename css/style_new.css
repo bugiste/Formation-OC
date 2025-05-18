@@ -720,7 +720,7 @@ footer {
     h1 {  
         font-size: clamp(18px, 5vw, 22px); /* Taille responsive */
         margin: 0 0 0.5em 0;
-        padding-right: 1em; /* Réduit pour mobile */
+        padding-right: 1.6rem; /* Réduit pour mobile */
         padding-left: 1em; /* Ajouté pour mobile */
     }
 
@@ -730,16 +730,17 @@ footer {
         padding-right: 1em; /* Ajouté pour mobile */ 
         margin-left: 1rem;
         margin-bottom: 2rem;
+        margin-right: 0.2rem;
     }     
     
     .paverecherche {
         display: flex;
         flex-direction: row;         
-        padding-right: 3em;          
-        width: 90%;        
+        /* padding-right: 3em;           */
+        width: 110%;        
         box-sizing: border-box;        
         margin: 0 auto 1em auto; /* Centré avec marge auto */
-        padding: 0 0.5em; /* Padding réduit */ 
+        padding-left: 1.8rem /* Padding réduit */ 
     }
     
     .recherche {
@@ -793,7 +794,7 @@ footer {
     }   
 
     .boutonIcone{
-        min-width: 40px; /* Réduit pour mobile */
+        min-width: 3.5rem; /* Réduit pour mobile */
         /* padding: 0 10px; Réduit pour mobile */
         margin-left: 5px; /* Réduit pour mobile */
 
@@ -830,17 +831,18 @@ footer {
         height: 7rem;
         gap: 0;
         margin-bottom: 10rem;   
-        margin-left: var(--bordureDroiteMobile);     
+        margin-left: 1rem;     
     }
 
     .boutonsFiltre {       
         display: grid;
         grid-template-columns: repeat(2, 1fr);               
-        row-gap: 2.5rem;
-        column-gap: 1rem;       
+        row-gap: 1.6rem;
+        column-gap: 1.8rem;       
         width: calc(100% - 4.8em - 1.5em); /* Compenser les paddings */        
-        padding: 0 1em; /* Padding symétrique par défaut */        
+        /* padding: 0 0.5em; Padding symétrique par défaut         */
         max-width: 100%; /* Évite un débordement */
+        margin-right: 1.5em;
     }    
 
     .FormatBoutonFiltre {
@@ -884,41 +886,43 @@ footer {
 
     .IconeFiltre {
         /* margin-right: 5px; */
-        padding-left: 1.5em;
+        padding-left: 1.1em;
+        padding-right:0.4rem
     }
 
     .logeDispo {
-        margin-left: var(--bordureDroiteMobile);
+        margin-left: 0.6rem;
         display: flex;
-        flex-direction: row;       
-        align-items: center;
-        width: auto;
-        gap: 10px;        
-        margin-bottom: 1em;
-        /* margin-left: 5em;         */
+        gap: 8px;        
+        margin-bottom: 1em;  
+        align-items: center; /* Centrer verticalement */  
     }
 
     .logeDispo p{        
-        margin-left: 0;
+        margin: 0;        
+        flex: 1; /* Prend tout l'espace restant */
+        text-align: left; /* Alignement normal du texte */
+        /* Force le texte à remplir la ligne */
+
+        /* word-break: break-word; Permet la césure si nécessaire */
+      
+        /* Ajout DS */
+        white-space: normal; /* Permet le retour à la ligne naturel */
+        min-width: 0; /* Permet au texte de déborder et de passer à la ligne si nécessaire */
+        overflow-wrap: break-word; /* Casse les mots longs si besoin */
+
     }
-
-
-   /*  .iconeInfo{
-        
-        padding: 2em;
-    } */
-
+   
     .iconeInfo {
     border-radius: 50%;
-    border-style: solid;
-    border-color: grey;
-    border-width: thin;
-    width: 20px;
-    height: 20px;
+    border: thin solid var(--main-bg-color:) ;   
+    width: 1.5rem;
+    height: 1.5rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 1rem;
+    /* margin-top: 0.7em; Ajustez cette valeur pour parfaire l'alignement vertical */
+    flex-shrink: 0;
     }
 
 
