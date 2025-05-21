@@ -910,7 +910,6 @@ footer {
         white-space: normal; /* Permet le retour à la ligne naturel */
         min-width: 0; /* Permet au texte de déborder et de passer à la ligne si nécessaire */
         overflow-wrap: break-word; /* Casse les mots longs si besoin */
-
     }
    
     .iconeInfo {
@@ -924,7 +923,6 @@ footer {
     /* margin-top: 0.7em; Ajustez cette valeur pour parfaire l'alignement vertical */
     flex-shrink: 0;
     }
-
 
     .offreHebergement {                
         display: flex;
@@ -946,14 +944,12 @@ footer {
     .celluleBouton1 {        
         grid-column: 1 / 2;
         /* Prend la moitié de la largeur de la 1ère ligne */
-    }
-
-    
+    }    
 
     .offreHebergement {                
         display: flex;                
         flex-direction: column-reverse;
-        width: 110%;
+        width: 100%;
         /* padding: 0 5%; Harmonisation avec les activités */
         box-sizing: border-box;
         margin-bottom: 1em;
@@ -985,13 +981,13 @@ footer {
     }
 
     .HotelsMarseille {
-        width: 100%;
+        width: 108%;
         /* height: auto; */
         display: flex;
         flex-direction: column; 
         align-items: center; /* Centrer les cartes horizontalement */       
         gap: 20px;
-        padding: 0px;
+        /* padding: 0px; */
         box-sizing: border-box;
         /* margin: 0; */
     }
@@ -1000,7 +996,7 @@ footer {
         /* Taille des cartes HBGT Marseille */
         
         width: calc(100% - 20px); /* Réduit la largeur de 20px au total */
-        margin-left: auto;
+        /* margin-left: auto; */
         margin-right: auto; /* Centre la carte */
         
         display: flex;
@@ -1041,7 +1037,7 @@ footer {
         margin: auto;   */      
         width: 100%; 
         padding: 0 2%;
-        margin: 2em 0;  
+        /* margin: 2em 0;   */
         border-radius: 0;     
         /* box-sizing: border-box; */
     }
@@ -1093,7 +1089,7 @@ footer {
         
         /* width: 100%; */
          width: calc(100% - 20px); /* Réduit la largeur */
-        max-width: 400px; /* Largeur maximale optionnelle */
+        /* max-width: 400px; Largeur maximale optionnelle */
         margin-left: auto;
         margin-right: auto; /* Centre la carte */
         
@@ -1164,7 +1160,7 @@ footer {
 
     .FormatImageActivites {       
         width: 100%;
-        height: 180px;        
+        height: 7em;        
         object-fit: cover;
         display: block;
         
