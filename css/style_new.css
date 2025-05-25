@@ -248,6 +248,7 @@ a {
 }
 
 .FormatBoutonFiltre {
+    width: 100%;
     display: flex;
     align-items: center;
     line-height: 3em;    
@@ -271,6 +272,8 @@ a {
     display: flex;
     box-sizing: content-box;
     padding-left: 0.5em;
+    Padding-right: 0.5em;
+    
 }
 
 .LibelleBoutonFiltre {

@@ -239,11 +239,11 @@ a {
 
 .boutonsFiltre {
     /* Permet de nommer l'ensemble des boutons de filtre */
-   
+    width: 100%;
     display: flex;
     flex-direction: row;    
     justify-content: flex-start;
-    gap: 3%;
+    gap: 1%;
     
 }
 
@@ -816,7 +816,7 @@ footer {
 
     .TitreFiltre {
         font-size: 18px;  
-        margin-left: 24px; 
+        margin-left: 0.5em; 
         margin-bottom: 1em; /* Ajout d'une marge en bas   */   
     }
 
@@ -914,7 +914,7 @@ footer {
    
     .iconeInfo {
     border-radius: 50%;
-    border: thin solid var(--main-bg-color:) ;   
+    border: thin solid var(--main-bg-color);   
     width: 1.5rem;
     height: 1.5rem;
     display: flex;
@@ -961,6 +961,7 @@ footer {
         
         width: 100%;        
         /* padding-right: 2.5%; */
+        overflow: hidden; /* Empêche tout débordement */
         padding: 0 10px; /* Ajoute un padding sur les côtés */
         box-sizing: border-box;
         display: flex;
@@ -981,31 +982,35 @@ footer {
     }
 
     .HotelsMarseille {
-        width: 108%;
+        width: 100%;
         /* height: auto; */
         display: flex;
         flex-direction: column; 
         align-items: center; /* Centrer les cartes horizontalement */       
         gap: 20px;
         /* padding: 0px; */
-        box-sizing: border-box;
+        padding: 0; /* Assurez-vous qu'il n'y a pas de padding asymétrique */
+        margin: 0 auto; /* Centre le conteneur */
+        /* box-sizing: border-box; */
         /* margin: 0; */
     }
 
     .MarseilleCards {
         /* Taille des cartes HBGT Marseille */
         
-        width: calc(100% - 20px); /* Réduit la largeur de 20px au total */
+        /* width: calc(100% - 20px);  *//* Réduit la largeur de 20px au total */
         /* margin-left: auto; */
-        margin-right: auto; /* Centre la carte */
-        
-        display: flex;
+       width: 100%; /* Utilisez 100% au lieu de calc(100% - 20px) */
+       max-width: 400px; 
+       /* margin-right: auto; */ /* Centre la carte */
+        margin: 0 auto; /* Centrer la carte */
+        /* display: flex;
         flex-direction: column;
         border-radius: 20px;
         overflow: hidden;
         filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
         margin-bottom: 1em;
-        align-items: center;
+        align-items: center; */
 
     }
 
@@ -1098,7 +1103,6 @@ footer {
         margin-bottom: 0;    
     }
 
-
     .populaires-cards img {
         width: 40%;
         height: 95%; 
@@ -1111,10 +1115,10 @@ footer {
     }
 
        .FormatImageHBGT {
-        width: 110%;
+        width: 100%;
         height: 125px;        
         object-fit: cover;
-        display: block;
+        /* display: block; */
         }
 
     .MarseilleAcivitesContent {
@@ -1250,8 +1254,10 @@ footer {
     }
 
     .FormatBoutonFiltre {
+        width: 100%;
         display: flex;        
-        line-height: 50px;        
+        line-height: 50px; 
+               
     }
 
     .offreHebergement{ 
