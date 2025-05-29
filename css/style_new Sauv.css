@@ -961,10 +961,10 @@ footer {
     .hebergements-and-populaires {
         
         width: 100%;        
-        /* padding-right: 2.5%; */
-        overflow: hidden; /* Empêche tout débordement */
+        padding-right: 5%;
+        overflow: hidden; Empêche tout débordement
         padding: 0 10px; /* Ajoute un padding sur les côtés */
-        box-sizing: border-box;
+        /* box-sizing: border-box; */
         display: flex;
         flex-direction: column-reverse;        
     }
@@ -992,8 +992,8 @@ footer {
         /* padding: 0px; */
         padding: 0; /* Assurez-vous qu'il n'y a pas de padding asymétrique */
         margin: 0 auto; /* Centre le conteneur */
-        /* box-sizing: border-box; */
-        /* margin: 0; */
+        margin-left: 2em; 
+        padding-right: 2%;       
     }
 
     .MarseilleCards {
@@ -1001,8 +1001,9 @@ footer {
         
         /* width: calc(100% - 20px);  *//* Réduit la largeur de 20px au total */
         /* margin-left: auto; */
+        margin-left: 3.5%;
        width: 100%; /* Utilisez 100% au lieu de calc(100% - 20px) */
-       max-width: 400px; 
+       /* max-width: 400px;  */
        /* margin-right: auto; */ /* Centre la carte */
         margin: 0 auto; /* Centrer la carte */
         /* display: flex;
