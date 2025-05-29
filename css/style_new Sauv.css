@@ -748,13 +748,13 @@ footer {
         display: flex;
         align-items: center;        
         background-color: var(--main-bg-color);
-        border-radius: 15px 0 0 15px;
+        border-radius: 13px 0 0 13px;
         flex-shrink: 1;
         height: 100%;
         padding: 0 10px; /* Réduit pour mobile */
         min-height: 48px;
         position: relative;
-        margin-right: 0.2em;
+        
     }
    
     .boutonRechercher, 
@@ -817,7 +817,8 @@ footer {
 
     .TitreFiltre {
         font-size: 18px;  
-        margin-left: 0.5em;       
+        margin-left: 0.5em; 
+        margin-bottom: 1em; /* Ajout d'une marge en bas   */   
     }
 
 
@@ -979,7 +980,6 @@ footer {
         padding: 0;
         margin: 0;
         margin-top: 2em;
-        margin-bottom: 1.5em;
     }
 
     .HotelsMarseille {
@@ -992,16 +992,27 @@ footer {
         /* padding: 0px; */
         padding: 0; /* Assurez-vous qu'il n'y a pas de padding asymétrique */
         margin: 0 auto; /* Centre le conteneur */
-        
+        /* box-sizing: border-box; */
+        /* margin: 0; */
     }
 
     .MarseilleCards {
-        /* Taille des cartes HBGT Marseille */       
+        /* Taille des cartes HBGT Marseille */
+        
+        /* width: calc(100% - 20px);  *//* Réduit la largeur de 20px au total */
+        /* margin-left: auto; */
        width: 100%; /* Utilisez 100% au lieu de calc(100% - 20px) */
-       /* max-width: 400px;  */
+       max-width: 400px; 
        /* margin-right: auto; */ /* Centre la carte */
         margin: 0 auto; /* Centrer la carte */
-        padding: 2px 5px 5px;
+        /* display: flex;
+        flex-direction: column;
+        border-radius: 20px;
+        overflow: hidden;
+        filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+        margin-bottom: 1em;
+        align-items: center; */
+
     }
 
     .MarseilleCardsContent {        
@@ -1014,9 +1025,13 @@ footer {
         margin: 0;
         font-size: 22px;
         margin-bottom: 0.5em;
-        margin-top: 0.5em ;        
+        margin-top: 0.5em ; 
+        /* margin-left: 3rem;       */
+
+        /* Ajout DS */
         display: inline; /* Permet un retour à ligne naturel */
         white-space: normal; /* Permet le retour à ligne */
+
     }          
 
     .populaires-icon {
@@ -1025,12 +1040,10 @@ footer {
 
     .populaires {
         /* border-radius: 0;
-        margin: auto;   */    
-        margin: 0;  
+        margin: auto;   */      
         width: 100%; 
-        /* background-color */
-        padding-right: 1em;
-        padding-left: 1%;
+        padding: 0 2%;
+        /* margin: 2em 0;   */
         border-radius: 0;     
         /* box-sizing: border-box; */
     }
@@ -1038,9 +1051,9 @@ footer {
     .populaires-title  {
         display: flex;
         align-items: center; /* Alignement vertical */
-        gap: 4px; /* Espace entre le texte et l'icône */
-        /* padding: 0 2%; */
-        margin: 1em 2%;
+        gap: 6px; /* Espace entre le texte et l'icône */
+        padding: 0 2%;
+        margin: 1em 0;
     }
 
     .populaires-cards {           
@@ -1131,25 +1144,31 @@ footer {
 
     .activitesMarseille{
         /* margin-right:0; */
-        /* padding-left: 5%; */
+        padding-left: 5%;
         width: 100%; 
         margin-top: 4em;
-        margin-bottom: 1em;
         /* margin-bottom: 1em;         */
         display: flex;        
         justify-content:flex-start;        
-    }    
+    }
+
+    .afficher {       
+        margin-left: 2cap;
+    }
 
     .titreActivites{        
         margin-left: 1em;        
-        text-align: right;       
+        text-align: right;
+        /* border: 1px solid #ccc; */
+        /* padding: 0.5em 1em;  */
     }       
 
     .FormatImageActivites {       
         width: 100%;
         height: 7em;        
         object-fit: cover;
-        display: block;        
+        display: block;
+        
     }   
 
     /* .card-container {     */
