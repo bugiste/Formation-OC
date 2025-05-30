@@ -729,9 +729,9 @@ footer {
         font-size: 16px;        
         /* margin-left: 5em;        
         padding-right: 1em; /* Ajouté pour mobile */ 
-        margin-left: 1rem;
-        margin-bottom: 2rem;
-        margin-right: 0.2rem;
+        /* margin-left: 1rem; */
+        margin-bottom: 0.4rem;
+        /* margin-right: 0.2rem; */
     }     
     
     .paverecherche {
@@ -820,7 +820,6 @@ footer {
         margin-left: 0.5em; 
         margin-bottom: 1em; /* Ajout d'une marge en bas   */   
     }
-
 
     .sectionFiltre {
         padding:0;
@@ -958,8 +957,7 @@ footer {
          /* border-radius: 0;     */
     }
 
-    .hebergements-and-populaires {
-        
+    .hebergements-and-populaires {        
         width: 100%;        
         padding-right: 5%;
         overflow: hidden; Empêche tout débordement
@@ -980,6 +978,7 @@ footer {
         padding: 0;
         margin: 0;
         margin-top: 2em;
+        margin-bottom: 1em;
     }
 
     .HotelsMarseille {
@@ -990,9 +989,9 @@ footer {
         align-items: center; /* Centrer les cartes horizontalement */       
         gap: 20px;
         /* padding: 0px; */
-        padding: 0; /* Assurez-vous qu'il n'y a pas de padding asymétrique */
-        margin: 0 auto; /* Centre le conteneur */
-        margin-left: 2em; 
+        /* padding: 0; Assurez-vous qu'il n'y a pas de padding asymétrique */
+        /* margin: 0 auto; Centre le conteneur */
+        margin-left: 1.3em; 
         padding-right: 2%;       
     }
 
@@ -1130,8 +1129,8 @@ footer {
         width: 100%;
         gap: 2em;        
         /* overflow: hidden;         */
-        padding: 0 5%;
-        /* padding-left: 5%; */
+        /* padding: 0 5%; */
+        padding-left: 10%;
         /* padding-right:5%;   */
         box-sizing: border-box;      
     }
@@ -1158,7 +1157,7 @@ footer {
     }
 
     .titreActivites{        
-        margin-left: 1em;        
+        margin-left: 0.5em;        
         text-align: right;
         /* border: 1px solid #ccc; */
         /* padding: 0.5em 1em;  */
@@ -1216,8 +1215,9 @@ footer {
     }
 
     .directionColumn {
-        margin-top: 2em;
-        margin-bottom: 2em;
+        margin-top: 1em;
+        /* margin-bottom: 2em; */
+        padding-left: 1.5em
     }
 }
 
