@@ -960,7 +960,7 @@ footer {
     .hebergements-and-populaires {        
         width: 100%;        
         padding-right: 5%;
-        overflow: hidden; Empêche tout débordement
+        overflow: hidden; /* Empêche tout débordement */
         padding: 0 10px; /* Ajoute un padding sur les côtés */
         /* box-sizing: border-box; */
         display: flex;
@@ -1007,7 +1007,7 @@ footer {
         /* padding: 0px; */
         /* padding: 0; Assurez-vous qu'il n'y a pas de padding asymétrique */
         /* margin: 0 auto; Centre le conteneur */
-        margin-left: 1.3em; 
+        margin-left: 0.5em; 
         padding-right: 2.5%;       
     }
 
@@ -1062,9 +1062,11 @@ footer {
         /* border-radius: 0;
         margin: auto;   */      
         width: 100%; 
-        padding: 0 2%;
-        /* margin: 2em 0;   */
-        border-radius: 0;     
+        /* padding: 0 2%; */
+        margin-left: 0;  
+        border-radius: 0; 
+        padding-left: 0.4em;
+        overflow-x: hidden;   
         /* box-sizing: border-box; */
     }
 
@@ -1084,7 +1086,7 @@ footer {
         /* padding-left: 1.4em;         */
         padding: 0;
         gap: 1em; 
-
+        margin-right: 0.3em;
         margin-bottom: 1em;
         }
 
