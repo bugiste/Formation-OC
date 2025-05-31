@@ -981,6 +981,22 @@ footer {
         margin-bottom: 1em;
     }
 
+    .sectionTitle
+    {
+        margin: 0;
+        font-size: 22px;
+        margin-bottom: 0.5em;
+        margin-top: 0.5em ; 
+        padding-left: 0.8em;
+;
+        /* margin-left: 3rem;       */
+
+        /* Ajout DS */
+        display: inline; /* Permet un retour à ligne naturel */
+        white-space: normal; /* Permet le retour à ligne */
+
+    }    
+
     .HotelsMarseille {
         width: 100%;
         /* height: auto; */
@@ -992,7 +1008,7 @@ footer {
         /* padding: 0; Assurez-vous qu'il n'y a pas de padding asymétrique */
         /* margin: 0 auto; Centre le conteneur */
         margin-left: 1.3em; 
-        padding-right: 2%;       
+        padding-right: 2.5%;       
     }
 
     .MarseilleCards {
@@ -1021,18 +1037,22 @@ footer {
         flex-direction: column;
     } 
 
+          
+
+
     .section-title {
         margin: 0;
         font-size: 22px;
         margin-bottom: 0.5em;
         margin-top: 0.5em ; 
+        padding-left: 0.2em;
         /* margin-left: 3rem;       */
 
         /* Ajout DS */
         display: inline; /* Permet un retour à ligne naturel */
         white-space: normal; /* Permet le retour à ligne */
 
-    }          
+    }  
 
     .populaires-icon {
         flex-shrink: 0;
@@ -1052,8 +1072,8 @@ footer {
         display: flex;
         align-items: center; /* Alignement vertical */
         gap: 6px; /* Espace entre le texte et l'icône */
-        padding: 0 2%;
-        margin: 1em 0;
+        padding: 0 1%;
+        /* margin: 1em 0; */
     }
 
     .populaires-cards {           
