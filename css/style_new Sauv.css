@@ -847,7 +847,7 @@ footer {
         grid-template-columns: repeat(2, 1fr);               
         row-gap: 1.6rem;
         column-gap: 1.8rem;       
-        width: calc(100% - 4.8em - 1.5em); /* Compenser les paddings */        
+        /* width: calc(100% - 4.8em - 1.5em); Compenser les paddings         */
         /* padding: 0 0.5em; Padding symétrique par défaut         */
         max-width: 100%; /* Évite un débordement */
         /* margin-right: 1.5em; */
@@ -1152,7 +1152,9 @@ footer {
         gap: 2em;        
         /* overflow: hidden;         */
         /* padding: 0 5%; */
-        padding-left: 10%;
+        
+        padding-left: 6%;
+        margin-right: 2.7%;
         /* padding-right:5%;   */
         box-sizing: border-box;      
     }
