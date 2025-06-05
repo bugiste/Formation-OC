@@ -6,18 +6,14 @@
 :root {
     --main-color: #0065FC; /* Bleu */
     --main-bg-color: #F2F2F2; /* Gris clair */
-    --filter-bg-color: #DEEBFF; /* Bleu clair */
-    
-    /* --bordureDroiteMobile: 47px */
-    /* --bordureDroiteMobile: 3.7em */
-    /* --bordureGaucheMobile: 2 rem */
+    --filter-bg-color: #DEEBFF; /* Bleu clair */    
+  
 }
 
 .fa-solid {
     color: var(--main-color);
 
 }
-
 
 body, h1, p, ul, li, h4 {
   margin: 0;
@@ -178,8 +174,7 @@ a {
     background-color: var(--main-color);;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
-    padding: 0 20px;
-    /* Ajout d'un padding sur le bouton  */
+    padding: 0 20px;    
 }
 
 .boutonIcone {
@@ -212,8 +207,7 @@ a {
 
     border-bottom-right-radius: 10px;
     background-color: var(--main-color);
-    padding: 0 20px;
-    /* Ajout d'un padding sur le bouton  */
+    padding: 0 20px;    
 }
 
 
@@ -351,14 +345,13 @@ a {
 .MarseilleCards {
     /* Taille des cartes HBGT Marseille */
     width: calc(33.33% - 13.33px);
-    /* 3 colonnes et gestion des gap // calcul de 3 colonnes avec un gap de 20 px */
+    /* 3 colonnes et gestion des gap // calcul de 3 colonnes avec un gap */
     display: flex;
     flex-direction: column;
     box-sizing: border-box;    
     margin-top: 15px;    
     background-color: white;
-    border-radius: 20px;
-    /* filter: drop-shadow(0px 3px 15px rgba(58, 56, 56, 0.7)); */
+    border-radius: 20px;    
     filter: drop-shadow(0px 3.5px 2px rgba(100, 100, 100, 0.3));
     align-items: flex-start;
 }
@@ -393,16 +386,9 @@ a {
     padding-top: 1em;
 }
 
-/* .MarseilleAcivites {
-    margin-top: 4em;
-    margin-bottom: 2em;
-} */
-
 .activitesMarseille{
     margin-top: 4em;
 }
-
-
 
 .MarseilleAcivitesContent {
     max-width: 100%;
@@ -612,7 +598,6 @@ footer {
 
 /*---- Small devices (phones, less than 768px)---- */
 @media (min-width: 320px) and (max-width: 767.98px) {
-
  
     body {
         margin: 0;
@@ -623,8 +608,7 @@ footer {
 
     .contenu {
         padding: 0;
-        margin: 0;
-        /* padding-left: 2%; */
+        margin: 0;        
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -656,8 +640,7 @@ footer {
     .navigation {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        width: 100%;
-        /* border-style: none; */
+        width: 100%;        
         justify-items: center; /* Centrer les éléments dans les cellules */
         padding: 0;
         margin: 0;        
@@ -712,9 +695,7 @@ footer {
         display: block;
         width: 100%;        
         border-bottom-color: var(--main-color);        
-        cursor: pointer;
-        /* Transformation du curseur en survol */
-        padding-bottom: 0.5em;        
+        cursor: pointer;                 
     }
 
     .titre{        
@@ -735,17 +716,13 @@ footer {
 
     p {
         font-size: 16px;        
-        margin-left: 0.5em;        
-        /* padding-right: 1em; Ajouté pour mobile  */
-        /* margin-left: 1rem; */
-        margin-bottom: 0.4rem;
-        /* margin-right: 0.2rem; */
+        margin-left: 0.5em;         
+        margin-bottom: 0.4rem;        
     }     
     
     .paverecherche {
         display: flex;
-        flex-direction: row;         
-        /* padding-right: 3em;           */
+        flex-direction: row;                 
         width: 110%;        
         box-sizing: border-box;        
         margin: 0 auto 1em auto; /* Centré avec marge auto */
@@ -767,11 +744,11 @@ footer {
    
     .boutonRechercher, 
     .boutonIcone {    
-    min-width: 0; /* Permet aux éléments de rétrécir */
-    display: block;
-    margin-right: 3em;
-    border-radius: 15px;
-    padding: 0 18px;
+        min-width: 0; /* Permet aux éléments de rétrécir */
+        display: block;
+        margin-right: 3em;
+        border-radius: 15px;
+        padding: 0 18px;
     }
 
     .recherche i{
@@ -803,10 +780,8 @@ footer {
     }   
 
     .boutonIcone{
-        min-width: 3.5rem; /* Réduit pour mobile */
-        /* padding: 0 10px; Réduit pour mobile */
+        min-width: 3.5rem; /* Réduit pour mobile */       
         margin-left: 5px; /* Réduit pour mobile */
-
     }
 
     .fa-magnifying-glass {
@@ -834,8 +809,7 @@ footer {
         margin:0;
         display: flex;        
         flex-direction: column;
-        align-items: flex-start;       
-        /* height: 90px;         */
+        align-items: flex-start;         
         height: 7rem;
         gap: 0;
         margin-bottom: 6rem;   
@@ -846,11 +820,8 @@ footer {
         display: grid;
         grid-template-columns: repeat(2, 1fr);               
         row-gap: 1.6rem;
-        column-gap: 1.8rem;       
-        /* width: calc(100% - 4.8em - 1.5em); Compenser les paddings         */
-        /* padding: 0 0.5em; Padding symétrique par défaut         */
+        column-gap: 1.8rem;        
         max-width: 100%; /* Évite un débordement */
-        /* margin-right: 1.5em; */
     }    
 
     .FormatBoutonFiltre {
@@ -860,7 +831,7 @@ footer {
         align-items: center;
         justify-content: center;          
         border-radius: 20px;
-        /* border: 1px solid rgba(207, 207, 216, 0.953); */
+        
         border: 1px solid rgba(207, 207, 216, 0.953);
         padding: 0 0.5em;
         box-sizing: border-box;
@@ -893,8 +864,7 @@ footer {
     padding: 0;
     }
 
-    .IconeFiltre {
-        /* margin-right: 5px; */
+    .IconeFiltre {        
         padding-left: 1.1em;
         padding-right:0.4rem
     }
@@ -910,12 +880,7 @@ footer {
     .logeDispo p{        
         margin: 0;        
         flex: 1; /* Prend tout l'espace restant */
-        text-align: left; /* Alignement normal du texte */
-        /* Force le texte à remplir la ligne */
-
-        /* word-break: break-word; Permet la césure si nécessaire */
-      
-        /* Ajout DS */
+        text-align: left; /* Alignement normal du texte */        
         white-space: normal; /* Permet le retour à la ligne naturel */
         min-width: 0; /* Permet au texte de déborder et de passer à la ligne si nécessaire */
         overflow-wrap: break-word; /* Casse les mots longs si besoin */
@@ -928,8 +893,7 @@ footer {
     height: 1.5rem;
     display: flex;
     align-items: center;
-    justify-content: center;
-    /* margin-top: 0.7em; Ajustez cette valeur pour parfaire l'alignement vertical */
+    justify-content: center;    
     flex-shrink: 0;
     }
 
@@ -958,20 +922,16 @@ footer {
     .offreHebergement {                
         display: flex;                
         flex-direction: column-reverse;
-        width: 100%;
-        /* padding: 0 5%; Harmonisation avec les activités */
+        width: 100%;        
         box-sizing: border-box;
         margin-bottom: 1em;
-        margin-top: 0.4em;
-         /* border-radius: 0;     */
+        margin-top: 0.4em;        
     }
 
     .hebergements-and-populaires {        
-        width: 100%;        
-        /* padding-right: 5%; */
+        width: 100%;                
         overflow: hidden; /* Empêche tout débordement */
-        padding: 0 10px; /* Ajoute un padding sur les côtés */
-        /* box-sizing: border-box; */
+        padding: 0 10px; /* Ajoute un padding sur les côtés */        
         display: flex;
         flex-direction: column-reverse;        
     }
@@ -997,92 +957,60 @@ footer {
         margin-bottom: 0.5em;
         margin-top: 0.5em ; 
         padding-left: 0.2em;
-;
-        /* margin-left: 3rem;       */
-
-        /* Ajout DS */
         display: inline; /* Permet un retour à ligne naturel */
         white-space: normal; /* Permet le retour à ligne */
-
     }    
 
     .HotelsMarseille {
-        width: 100%;
-        /* height: auto; */
+        width: 100%;        
         display: flex;
         flex-direction: column; 
         align-items: center; /* Centrer les cartes horizontalement */       
-        gap: 20px;
-        /* padding: 0px; */
-        /* padding: 0; Assurez-vous qu'il n'y a pas de padding asymétrique */
-        /* margin: 0 auto; Centre le conteneur */
+        gap: 20px;        
         margin-left: 0.5em; 
         padding-right: 2.5%;       
     }
 
     .MarseilleCards {
-        /* Taille des cartes HBGT Marseille */
-        
-        /* width: calc(100% - 20px);  *//* Réduit la largeur de 20px au total */
-        /* margin-left: auto; */
+        /* Taille des cartes HBGT Marseille */        
         margin-left: 3.5%;
-       width: 100%; /* Utilisez 100% au lieu de calc(100% - 20px) */
-       /* max-width: 400px;  */
-       /* margin-right: auto; */ /* Centre la carte */
+        width: 100%; /* Utilisez 100% au lieu de calc(100% - 20px) */      
         margin: 0 auto; /* Centrer la carte */
-        /* display: flex;
-        flex-direction: column;
-        border-radius: 20px;
-        overflow: hidden;
-        filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
-        margin-bottom: 1em;
-        align-items: center; */
-
     }
 
     .MarseilleCardsContent {        
         padding: 10px;        
         display: flex;
         flex-direction: column;
-    }          
-
+    } 
 
     .section-title {
         margin: 0;
         font-size: 22px;
         margin-bottom: 0.5em;
         margin-top: 0.5em ; 
-        padding-left: 0.2em;
-        /* margin-left: 3rem;       */
-
-        /* Ajout DS */
+        padding-left: 0.2em;        
         display: inline; /* Permet un retour à ligne naturel */
         white-space: normal; /* Permet le retour à ligne */
-
     }  
 
     .populaires-icon {
         flex-shrink: 0;
     }
 
-    .populaires {
-        /* border-radius: 0;
-        margin: auto;   */      
-        width: 100%; 
-        /* padding: 0 2%; */
+    .populaires {           
+        width: 100%;         
         margin-left: 0;  
         border-radius: 0; 
         padding-left: 0.4em;
-        overflow-x: hidden;   
-        /* box-sizing: border-box; */
+        overflow-x: hidden;           
     }
 
     .populaires-title  {
         display: flex;
         align-items: center; /* Alignement vertical */
         gap: 6px; /* Espace entre le texte et l'icône */
-        padding: 0 1%;
-        /* margin: 1em 0; */
+        padding: 0 1%;        
         margin-top: 1.5em;
     }
 
@@ -1141,8 +1069,7 @@ footer {
         width: 100%;
         height: 125px;        
         object-fit: cover;
-        height: 6em;
-        /* display: block; */
+        height: 6em;       
         }
 
     .MarseilleAcivitesContent {
@@ -1151,28 +1078,20 @@ footer {
         align-items: center; /* Centrer les cartes horizontalement */       
         width: 100%;
         gap: 2em;        
-        /* overflow: hidden;         */
-        /* padding: 0 5%; */
-        
         padding-left: 6%;
-        margin-right: 2.7%;
-        /* padding-right:5%;   */
+        margin-right: 2.7%;       
         box-sizing: border-box;      
     }
 
     .MarseilleAcivitesContent .card {
-        width: 100%; 
-        /* padding-right: 1em; */
-        /* padding-left: 1em; */
+        width: 100%;         
         overflow: hidden;                      
     }
 
-    .activitesMarseille{
-        /* margin-right:0; */
+    .activitesMarseille{        
         padding-left: 5%;
         width: 100%; 
-        margin-top: 4em;
-        /* margin-bottom: 1em;         */
+        margin-top: 4em;        
         display: flex;        
         justify-content:flex-start;        
     }
@@ -1183,9 +1102,7 @@ footer {
 
     .titreActivites{        
         margin-left: 0.5em;        
-        text-align: right;
-        /* border: 1px solid #ccc; */
-        /* padding: 0.5em 1em;  */
+        text-align: right;       
     }       
 
     .FormatImageActivites {       
@@ -1196,24 +1113,18 @@ footer {
         
     }   
 
-    /* .card-container {     */
         .card {     
         width: 100%;        
         display: flex;
-        flex-direction: column;
-        /* min-height: 200px;         */
-        /* box-sizing: border-box;         */
+        flex-direction: column;        
         background-color: white;
         border-radius: 20px;
         overflow: hidden;
         margin-bottom: 1em;
-        filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
-        /* object-fit: cover; */
-        /* overflow: hidden; */
+        filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));        
     }
 
-    .activiteTexte{
-        /* width: auto; */
+    .activiteTexte{        
         font-size: 16px;
         padding-left : 1em; 
         margin: 0;        
@@ -1225,9 +1136,7 @@ footer {
         margin:0;       
         display: flex;
         flex-direction: column;
-        align-items: center; /* Centrer le contenu du footer */
-        /* justify-content:flex-start; */
-        /* padding-left: 4em; */
+        align-items: center; /* Centrer le contenu du footer */        
     }
 
     .directionRow {
@@ -1240,8 +1149,7 @@ footer {
     }
 
     .directionColumn {
-        margin-top: 1em;
-        /* margin-bottom: 2em; */
+        margin-top: 1em;        
         padding-left: 1.5em
     }
 }
@@ -1255,13 +1163,7 @@ footer {
 
     .body{
         width: 100%;           
-    }
-
-    /* .contenu{
-        
-        padding-left: 0px;
-        padding-right: 0px;
-    } */
+    }   
 
     .pave{
         Margin-top: 40px;
@@ -1286,8 +1188,7 @@ footer {
         font-size: 18px;        
     }
 
-    .FormatBoutonFiltre {
-        /* width: 100%; */
+    .FormatBoutonFiltre {        
         display: inline-flex;
         align-items: center;
         display: flex;        
